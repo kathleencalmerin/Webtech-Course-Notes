@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+nav {
+    position: fixed;
+    height: 23%;
+    width: 100%;
+    z-index: 1;
+    color: #F6F6E8;
+    background: #404040;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    width: 120px;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F6F6E8;
+    display: block;
+    width: 200px;
+    transition: 0.3s ease;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+nav ul li a:hover {
+    border-top: 4px solid #00ACE9;
+    border-bottom: 4px solid #00ACE9;
+    padding: 6px 0;
+}
+
+
+nav #logo {
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+/** BACKGROUND **/
+
+.background {
+    width: 100%;
+
+}
+
+
+
+p {
+    font-family: arial;
+    font-size: 15px;
+}
+
+
+
+/** CONTENT **/
+
+#main .title {
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 2px 2px;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+#main .content {
+    width: 95%;
+    margin: 5px auto 25px auto;
+    padding: 10px;
+    box-shadow: 2px 2px;
+    background: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+/** CONTAINER **/
+
+#main {
+    padding-top: 140px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#container h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#container > div {
+    padding: 10px;
+    height: 500px;
+    margin: 5%;
+    background-color: white;
+    line-height: 20px;
+}
+
+#container img {
+    width: 100%;
+    height: 97%;
+}
+
+#container .box img {
+    width: 100%;
+    height: 60%;
+}
+
+#container .box1 img {
+    width: 100%;
+    height: 87%;
+}
+
+.TextDescription {
+    padding: 15px;
+}
+
+
+/** FOOTER **/
+
+.footer {
+    position: relative;
+    background: #404040;
+    color: #F6F6E8;
+    height: 10%;
+    text-align: justify;
+    padding-left: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper {
+    background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%), linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(143, 152, 157, 0.60) 100%);
+    background-blend-mode: normal, multiply;
+    padding-top: 36px;
+    padding-bottom: 87px;
+}
