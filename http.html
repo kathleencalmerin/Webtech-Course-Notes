@@ -61,6 +61,47 @@
         <li>Response headers </li>
         <li>Empty line</li>
         <li>Message body</li>
+        
+        <h3>HTTP Request Methods</h3>
+        <li>GET
+        <ul>Most commonly used HTTP method</ul>
+        <ul>Used to request from the server the retrieval of the source identified by the request URI; the retrieved resource is returned in the message body as an entity. </ul>
+        <ul>Can be combined with conditional and/or range request headers to effect conditional and/or partial resource retrieval</ul>
+        <ul>Must be supported by all general-purpose servers.</ul>
+        </li>
+        
+        <li>HEAD
+        <ul>Identical to GET, except the message body is not included in the response </ul>
+        </li>
+        
+        <li>POST
+        <ul>Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.</ul>
+        </li>
+        
+        <li>OPTIONS 
+        <ul>Request for information about the communication options available on the request/response chain identified by the Request-URI. This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating resource retrieval. </ul>
+        </li>
+        
+        <li>TRACE 
+        <ul>Request the server to “echo” back to the client the received request </ul>
+            <ul>Typically used for testing/diagnostics of the request chain </ul>
+        </li>
+        
+        <li>PUT
+            <ul>Request the server to store the enclosed entity in the message under the specified request URI </ul>
+        </li>
+        
+        <li> DELETE 
+        <ul>Request the server to delete the resource identified by the request URI</ul>
+        </li>
+        
+        <li>CONNECT 
+        <ul>Reserved for use of tunneling proxy servers </ul>
+        </li>
+        
+        <h3>Idempotent Methods </h3>
+        <li>The methods GET, HEAD, PUT and DELETE share this property. </li>
+        
     </body>
     </head>
 </html>
