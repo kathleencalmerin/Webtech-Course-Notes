@@ -22,6 +22,18 @@ a,a:hover {
 	text-decoration: none;
 }
 img {max-width: 100%;}
+
+/*---------------------------------------------------- 	Intro------------------------------------------------------*/
+header {
+	padding-bottom:50px;
+}
+.intro {
+	font-family:'Playball',cursive;
+	font-size:60px;
+	line-height:1.0;
+	font-weight: 900;
+	color:#fff;
+}
 /*---------------------------------------------------- 	Menu------------------------------------------------------*/
 .isFixed {
 	left:0px;
@@ -37,7 +49,9 @@ img {max-width: 100%;}
 	 bottom:0;
 }
 
-
+.navArea {
+	/*float:right;*/
+}
 .navwrapper .container {
 	padding:0;
 	width:auto;
@@ -107,11 +121,11 @@ img {max-width: 100%;}
 	display:none;
 }
 .isFixed .navbar-inverse .navbar-nav>.active>a,.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
-	background:#cc580c;
+	background:#c5c5c5;
 	color:#fff;
 }
 .isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
-	background:#cc580c;
+	background:#c5c5c5;
 	color:#fff;
 }
 .isFixed .navbar.navbar-inverse.navbar-static-top a {
@@ -140,17 +154,6 @@ img {max-width: 100%;}
 	.collapse {background: #333;}
 	.navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
 }
-/*---------------------------------------------------- 	Intro------------------------------------------------------*/
-header {
-	padding-bottom:50px;
-}
-.intro {
-	font-family:'Playball',cursive;
-	font-size:60px;
-	line-height:1.0;
-	font-weight: 900;
-	color:#fff;
-}
 /*---------------------------------------------------- 	Parallax------------------------------------------------------*/
 .parallax {
 	text-align:center;
@@ -161,14 +164,16 @@ header {
 	overflow:hidden;
 }
 .parallax-pattern-overlay {
-	background-image:url(../img/pattern.png);
-	background-repeat: repeat;
+	background-image:url(../img/Graphic-Designer.jpg);
+	background-repeat: no-repeat;
 }
 
 .parallax-window {
     min-height: 400px;
     background: transparent;
 }
+
+.
 /*---------------------------------------------------- 	Heading------------------------------------------------------*/
 .heading {
 	padding-bottom:15px;
@@ -194,54 +199,6 @@ header {
 }
 img#site-title {
 	max-width: 150px;
-}
-/*---------------------------------------------------- 	Team------------------------------------------------------*/
-.papers,.papers:before,.papers:after {
-	background-color:#fff;
-	border:1px solid #ccc;
-	box-shadow:inset 0 0 30px rgba(0,0,0,0.1),1px 1px 3px rgba(0,0,0,0.2);
-}
-.papers {
-	position:relative;
-	width:90%;
-	padding:2em;
-	margin:0px auto;
-	margin-top:40px;
-	font-size:12px;
-}
-.papers:before,.papers:after {
-	content:"";
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	-webkit-transform:rotateZ(2.5deg);
-	-o-transform:rotate(2.5deg);
-	transform:rotateZ(2.5deg);
-	z-index:-1;
-}
-.papers:after {
-	-webkit-transform:rotateZ(-2.5deg);
-	-o-transform:rotate(-2.5deg);
-	transform:rotateZ(-2.5deg);
-}
-.papers h1 {
-	font-size:1.8em;
-	font-weight:normal;
-	text-align:center;
-	padding:0.2em 0;
-	margin:0;
-	border-top:1px solid #ddd;
-	border-bottom:2px solid #ddd;
-}
-.papers p {
-	text-align:left;
-	margin:1.5em 0;
-}
-.papers img {
-	max-width:100%;
-	margin-bottom: 5px;
 }
 
 .grid-gallery ul {
@@ -291,7 +248,65 @@ img#site-title {
 	background:#333;
 	padding: 25px;
 }
-/* Slideshow style */
+
+
+
+
+
+/*----------------------------------------------------	 8. Footer Style------------------------------------------------------*/
+.footer {
+	background:#cc580c;
+	margin-top:120px;
+	position:relative;
+}
+.footer .container {
+	padding:60px 0 20px;
+}
+.footer ul {
+	margin:0 auto;
+	margin-bottom:30px;
+	margin-top:10px;
+	text-align:center;
+	list-style-type:none;
+	padding-left:0;
+}
+.footer ul li {
+	display:inline-block;
+	text-align:center;
+	background:rgba(0,0,0,0.2);
+	color:#ffffff;
+	line-height:45px;
+	margin:0 4px 0px;
+	width:45px !important;
+	height:45px !important;
+		-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.footer ul li:hover {
+	background:#2a2a2a;
+}
+.footer ul li:hover	a {
+	color:#fff;
+}
+.footer ul li a {
+	color:#fff;
+	width:42px !important;
+	height:42px !important;
+}
+.footer ul li a i {
+	line-height:45px;
+	color:#fff;
+}
+.footer p {
+	color:#fff;
+	font-size:13px;
+	line-height:24px;
+	font-weight:300;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+
 .slideshow {
 	position:fixed;
 	background:rgba(0,0,0,0.6);
@@ -420,92 +435,4 @@ span.nav-next:before {
 }
 span.nav-close:before {
 	content: "\f00d";
-}
-
-@media screen and (max-width:60em) {
-	.grid li {
-			width:33.3%;
-	}
-	.slideshow li {
-			width:100%;
-			height:100%;
-			top:0;
-			left:0;
-			margin:0;
-	}
-	.slideshow li figure img {
-			width:auto;
-			margin:0 auto;
-			max-width:100%;
-	}
-	.slideshow nav span,.slideshow nav span.nav-close {
-			font-size:1.8em;
-			padding:0.3em;
-	}
-	.info-keys {
-			display:none;
-	}
-}
-@media screen and (max-width:35em) {
-	.grid li {
-			width:50%;
-	}
-}
-@media screen and (max-width:24em) {
-	.grid li {
-			width: 100%;
-	}
-}
-
-/*----------------------------------------------------	 8. Footer Style------------------------------------------------------*/
-.footer {
-	background:#cc580c;
-	margin-top:120px;
-	position:relative;
-}
-.footer .container {
-	padding:60px 0 20px;
-}
-.footer ul {
-	margin:0 auto;
-	margin-bottom:30px;
-	margin-top:10px;
-	text-align:center;
-	list-style-type:none;
-	padding-left:0;
-}
-.footer ul li {
-	display:inline-block;
-	text-align:center;
-	background:rgba(0,0,0,0.2);
-	color:#ffffff;
-	line-height:45px;
-	margin:0 4px 0px;
-	width:45px !important;
-	height:45px !important;
-		-webkit-border-radius:3px;
-	border-radius:3px;
-}
-.footer ul li:hover {
-	background:#2a2a2a;
-}
-.footer ul li:hover	a {
-	color:#fff;
-}
-.footer ul li a {
-	color:#fff;
-	width:42px !important;
-	height:42px !important;
-}
-.footer ul li a i {
-	line-height:45px;
-	color:#fff;
-}
-.footer p {
-	color:#fff;
-	font-size:13px;
-	line-height:24px;
-	font-weight:300;
-	text-align:center;
-	text-transform:uppercase;
 }
