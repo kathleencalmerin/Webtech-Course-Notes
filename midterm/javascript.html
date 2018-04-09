@@ -1,0 +1,637 @@
+﻿<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> Java Script </title>
+	
+</head>
+
+  <body>
+
+	<h2>JAVASCRIPT</h2>
+	<details>
+		<summary>EXTERNALLY LINKED SCRIPT</summary>
+		<ul>
+		<li>Gets part of an array to another location on the array. And returns the array (with the same length)<br /><br /></li>
+		<li>Syntax:
+		<ul>
+		<li>&lt;script src="myscripts.js"&gt;&lt;/script&gt;</li>
+		</ul>
+		</li>
+		</ul>
+	</details>
+	
+	<details>
+		<summary>EMBEDDED SCRIPT</summary>
+		<ul>
+		<li>
+		<p>Between a pair of and &lt;/script&gt; tags</p>
+		</li>
+		<li>
+		<p>From an external file specified by the src attribute of a &lt;script&gt; tag</p>
+		</li>
+		<li>Syntax:&nbsp;
+		<ul>
+		<li>&lt;script&gt;<br />document.getElementById("demo").innerHTML = "My First JavaScript";<br />&lt;/script&gt;</li>
+		</ul>
+		</li>
+		</ul>
+	</details>
+	
+	<details>
+		<summary>INLINE SCRIPT</summary>
+		<ul>
+		<li>Normally the HTML event attributes are used to call functions specified elsewhere in script tags.</li>
+		<li>Syntax:&nbsp;
+		<ul>
+		<li>&lt;p&gt;&lt;a href="#" onClick="alert('Hello');"&gt;Click Me&lt;/a&gt;&lt;/p&gt;</li>
+		</ul>
+		</li>
+		</ul>
+	</details>
+	
+	<details>
+		<summary>TOP LEVEL / GLOBAL</summary>
+		<ul>
+		<li>_dump 
+		<p>Prints a string representation of an object to the log file.</p>
+		</li>
+		<li>eval 
+		<p>Evaluates an expression or statements.</p>
+		</li>
+		<li>isNaN 
+		<p>Determines whether the result of a string parsed by parseInt or parseFloat is a valid number.</p>
+		</li>
+		<li>parseFloat 
+		<p>Parses a string and returns a floating point number.</p>
+		</li>
+		<li>parseInt
+		<p>Parses a string and returns an integer of the specified radix or base.</p>
+		</li>
+		<li>print
+		<p>Prints a string to the log file.</p>
+		</li>
+		</ul>
+	</details>
+	
+	<details>
+		<summary>FUNCTION</summary>
+		<ul>
+		<li>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</li>
+		<li>Syntax:
+		<ul>
+		<li>function <em>name</em>(<em>parameter1, parameter2, parameter3</em>) {<br />&nbsp;&nbsp;&nbsp; <em>code to be executed</em>}
+		</ul>
+		</li>
+		</ul>
+	</details>
+
+	<details>
+		<summary>ARRAY</summary>
+			<details>
+				<summary class = "sub">Some Characterictics </summary>		
+					<ul>
+					<li>Allow mixed elements.</li>
+					</ul>
+					<div class = "example">
+					<p>Ex. array1 = [10, true, 'hello'];</p>
+					</div>
+					<ul>
+					<li>Allow to change the size of the array</li>
+					</ul>
+					<div class = "example">
+					<p>Ex. var array1 = new Array(5);</p>
+					<p>array1.length = 4;</p>
+					</div>
+					<ul>
+					<li>Array indices can be contiguous</li>
+					</ul>
+					<div class = "example">
+					<p>Ex. var array1 = [1, 2, 3, 4, 5];</p>
+					<p>array1[8] = 8;</p>
+					<p>console.log(array1);</p>
+					<p>//Result : [1, 2, 3, 4, 5, undefined, undefined, 8]</p>
+					</div>
+			</details>
+			
+		<details  class = "sub">	
+			<summary class="sub">Mutator Methods</summary>	
+			<p>Modifies the target array</p>
+			
+			<h3>Array.prototype.copyWithin()</h3>	
+			<p>Gets part of an array to another location on the array. And returns the array (with the same length).</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>arr.copyWithin(target)</p>
+				<p>arr.copyWithin(target, start)</p>
+				<p>arr.copyWithin(target, start, end)</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = ['ichi' 'san', 'yon', 'go', 'ni'].copyWithin(2, 0);</p>
+				<p>console.log(sample);</p>
+				<p>// Result : ["ichi", "san", "ichi", "san", "yon"]</p>
+			</div>		
+
+			<h3>Array.prototype.pop()</h3>	
+			<p>Removes the last element of an array.</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>array.pop()</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = [‘cat’, ‘dog’, ‘fish’];</p>
+				<p>sample.pop();</p>
+				<p>// Results: [‘cat’, ‘dog’]</p>
+			</div>	
+
+			<h3>Array.prototype.push()</h3>	
+			<p>Adds one or more elements to end of an array.</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>array.push([element1[, ...[, elementN]]])</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = [‘a’, ‘b’, ‘c’];</p>
+				<P>sample.push(‘d’, ‘e’);</P>
+				<p>//Results: [‘a’, ‘b’, ‘c’, ‘d’, ‘e’)</p>
+			</div>	
+
+		</details>
+
+		<details >	
+			<summary class="sub">Accessor Methods</summary>
+			<p>Does not modifies the target array</p>
+
+			<h3>Array.prototype.concat()</h3>	
+			<p>Joining an array to another array or a value.</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>var new_array = old_array.concat(value1[, value2[, ...[, valueN]]])</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample1 = [1, 2]</p>
+				<p>var sample2 = [3, 4];</p>
+				<p>var sample3 = sample1.concat(sample2)</p>
+				<p>console.log(sample3)</p>
+				<p>//Results: [1, 2 , 3, 4]</p>
+			</div>	
+
+			<h3>Array.prototype.indexOf()</h3>	
+			<p>Gets the index of an element from the array, and returns -1 if the index is not found or undefined.</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>array.indexOf(searchElement[, fromIndex])</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = [8, 17, 9, 20, 33]</p>
+				<p>sample.indexOf(20);</p>
+				<p>//Results: 3</p>
+				<p>sample.indexOf(100);</p>
+				<p>//Results: -1</p>
+			</div>	
+
+			<h3>Array.prototype.lastIndexOf()</h3>	
+			<p></p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>array.lastIndexOf(searchElement)</p>
+				<p>array.lastIndexOf(searchElement, fromIndex)</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = [100, 50, 25, 30, 100];</p>
+				<p>sample.lastIndexOf(100);</p>
+				<p>//Result: 4</p>
+			</div>
+
+			<h3>Array.prototype.toString()</h3>	
+			<p>Returns the array into a string representation, and returns it.</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>array.toString()</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = [‘Hello’, ‘World’, ‘Hi’, ‘Universe’];</p>
+				<p>sample.toString();</p>
+				<p>//Result: "Hello,World,Hi,Universe"</p>
+			</div>
+		</details>
+
+		<details>	
+			<summary class="sub">Iterator Methods</summary>
+
+			<h3>Array.prototype.forEach()</h3>	
+			<p>Executes a given function on every element of an array once.</p>
+			<p> Syntax: </p>
+			<div class = "example">
+				<p>arr.forEach(function callback(currentValue, index, array) {//your iterator}[, thisArg]);</p>
+			</div>
+			<p> Example: </p>	
+			<div class = "example">
+				<p>var sample = ['house', 'park', 'mall'];</p>
+				<p>sample.forEach(function(element) {</p>
+				<p>    console.log(element);</p>
+				<p>});</p>
+				<p>// Result : house</p>
+				<p>// Result : park</p>
+				<p>// Result : mall</p>
+			</div>	
+		</details>
+	</details>
+		<details>
+		<summary>JAVA VS JAVASCRIPT</summary>
+		<table class = "html-table">
+			<tbody>
+				<tr>
+					<td>
+					<p><strong>JavaScript</strong></p>
+					</td>
+					<td>
+					<p><strong>Java</strong></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Object-oriented. No distinction between types of objects. Inheritance is through the 
+					       prototype mechanism, and properties and methods can be added to any object dynamically.</p>
+					</td>
+					<td>
+					<p>Class-based. Objects are divided into classes and instances with all inheritance through 
+						   the class hierarchy. Classes and instances cannot have properties or methods added dynamically.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Dynamic typing &ndash; Variable data types are not declared</p>
+					</td>
+					<td>
+					<p>Static typing &ndash; Variable data types must be declared</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Cannot automatically write to hard disk.</p>
+					</td>
+					<td>
+					<p>Can automatically write to hard disk.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</details>
+	
+	<details>
+		<summary>JAVASCRIPT VARIABLE</summary>
+		<p>Variable declarations, wherever they occur, are processed before any code is executed.
+		   The scope of a variable declared with var is its current <em>execution context</em>, which is
+		   either the enclosing function or, for variables declared outside any function, global.
+		   If you re-declare a JavaScript variable, it will not lose its value.</p>
+		
+		
+		<h3>Declaring and initializing two variables</h3>
+		<div class = "example">
+		<p>var a = 0, b = 0;</p>
+		</div>
+
+		<h3>Assigning two variables with single string value</h3>
+		<div class = "example">
+		<p>var a = 'A';</p>
+		<p>var b = a;</p>
+		<p>// Equivalent to:</p>
+		<p>var a, b = a = 'A';</p>
+		</div>
+		
+		
+		<p><strong>let</strong> allows you to declare variables that are limited in scope to the block,
+		 statement, or expression on which it is used. This is unlike the var keyword, which defines a 
+		 variable globally, or locally to an entire function regardless of block scope.</p>
+		 
+		<p>The <strong>const </strong>declaration creates a read-only reference to a value. It does not 
+		   mean the value it holds is immutable, just that the variable identifier cannot be reassigned. 
+		   For instance, in case the content is an object, this means the object itself can still be altered.</p>
+	   
+	<details>
+	<summary>JAVASCRIPT DATA TYPES AND DATA STRUCTURES</summary>
+	<details class = "sub">
+		<summary class = "sub">Simple/Primitive values</summary>
+		<p>All types except objects define immutable values (values, which are incapable of being changed).
+		 For example and unlike to C, Strings are immutable. We refer to values of these types as "primitive values".</p>
+		<ul>
+		<li>Boolean type</li>
+		<li>Null type</li>
+		<li>Undefined type</li>
+		<li>Number type</li>
+		<li>String type</li>
+		<li>Symbol type</li>
+		</ul>
+	</details>
+	</details>
+	
+	<details class = "sub">
+		<summary>Structure/Objects</summary>
+		<p>In JavaScript, objects can be seen as a collection of properties. With the object literal
+		   syntax a limited set of properties are initialized then properties can be added and removed.</p>
+		   <p> Use the prototype object oriented </p>
+		   
+		<p>There are two types of object properties which have certain attributes:</p>
+		<ul>
+		<li>Data property</li>
+		<li>Accessor property</li>
+		</ul>
+	
+		<h3>Creating an Object</h3>
+		<ul>
+		<li>The same as Javascript variables, it is also case sensitive. On defining a property of an object, just assign it with a value.</li>
+		<li>Example:</li>
+		</ul>
+		<div class = "example">
+		<p>var flower= new Object();</p>
+		<p>flower.name = ‘rose’;</p>
+		<p>flower.color = ‘red’</p>
+		<p>flower.description = ‘beautiful’;</p>
+		</div>
+
+		<h3>Using JavaScript Object Notation (JSON)</h3>
+		<ul>
+		<li>Used for storing data.</li>
+		<li>An object can composed of an array, set of objects, an array inside an array or an object, or an object inside an array or another object. Data storing could be complex.</li>
+		<li>Example of JSON file:</li>
+		</ul>
+
+		<div class = "example">
+			<p>flower= [</p>
+			<p>{</p>
+			<p>"name" : "Rose",</p>
+			<p>"color" :"red",</p>
+			<p>"description" : “beautiful”</p>
+			<p>},</p>
+			<p>{</p>
+			<p>"name" : "Rose",</p>
+			<p>"color" :"red",</p>
+			<p>"description" : “beautiful”</p>
+			<p>}</p>
+			<p>]</p>
+		</div>
+	</details>
+	</details>
+	</details>
+	
+		<details>
+	
+	<summary>DOM (Document Object Model)</summary>
+	<p>DOM(Document Object Model), according to Mozilla Developer Network, is a programming interface for HTML and XML documents. &ldquo;It provides a structured representation of the document and it defines a way that the structure can be accessed from programs so that they can change the document structure, style and content.&rdquo; </p>
+
+	<p>DOM Standards</p>
+		<ul>
+			<li>W3C DOM</li>
+			<li>WHATWG DOM</li>
+		</ul>
+
+	<p>For example, the standard DOM specifies that the getElementsByTagName method in the code below must return a list of all the &lt;P&gt; elements in the document:</p>
+
+	<p>HTML:</p>
+	<div class="example">
+	<p>&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+	<p>&lt;p&gt; Clean clams crammed in clean cans.&lt;/p&gt;</p>
+	</div>
+	
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>var paragraphs = document.getElementsByTagName(&ldquo;p&rdquo;);</p>
+	<p>//Paragraph[0] is the paragraph containing &ldquo;Hello World&rdquo;</p>
+	<p>//Paragraph[1] is the paragraph containing &ldquo;This is a paragraph&rdquo;</p>
+	<p>Paragraph[0]</p>
+	<p>//Result :&lt;p&gt; The quick brown fox jumped over the lazy dog.&lt;/p&gt;</p>
+	<p>paragraphs[1].nodeName</p>
+	<p>//Result :&ldquo;P&rdquo;</p>
+	<p>paragraphs[1].innerText</p>
+	<p>//Result :&ldquo;Clean clams crammed in clean cans.&rdquo;</p>
+	</div>
+
+	<p><strong>Important Data types</strong></p>
+	<p>There are a number of different data types that is being passed around the API that you should be aware of. These are the following important data types:</p>
+		<ul>
+			<li>Document</li>
+		<ul>
+			<li>When an object of type document is returned, this object will be the root document itself.</li>
+		</ul>
+			<li>Element</li>
+		<ul>
+			<li>This refers to the node of type element returned by a member of the DOM API. a method returns an element that is created in the DOM.</li>
+		</ul>
+			<li>nodeList</li>
+		<ul>
+			<li>An array of elements that are accessed by index in either:</li>
+		<ul>
+			<li>list.item(1)</li>
+			<li>list[1]</li>
+		</ul>
+		</ul>
+			<li>Attribute</li>
+		<ul>
+			<li>These are nodes in the DOM that when returned as an object, exposes special interface for attributes</li>
+		</ul>
+			<li>namedNodeMap</li>
+		<ul>
+			<li>Similar to an array but the items in it are accessed by name or by index.</li>
+		</ul>
+		</ul>
+
+	<p>The following is a brief list of common APIs in web and XML page scripting using the DOM.</p>
+		<ul>
+			<h3>document.getElementById</a>(id)</h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Element = document.getElementById(id);</p>
+	</div>
+
+	<p>HTML:</p>
+	<div class="example">
+		<p>&lt;body&gt;</p>
+		<p>&lt;p id=&rdquo;btns&rdquo;&gt;</p>
+		<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hello&rsquo;);&rdquo;&gt;Click to say hello&lt;/button&gt;</p>
+		<p>&lt;button onclick=&rdquo;saySomething(&lsquo;hi&rsquo;);&rdquo;&gt;Click to say hi&lt;/button&gt;</p>
+		<p>&lt;/p&gt;</p>
+		<p>&lt;/body&gt;</p>
+	</div>
+
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+		<p>Function saySomething(newString) {</p>
+		<p>Var elem = document.getElementById(&lsquo;btns&rsquo;);</p>
+		<p>Elem.style.color = newString;</p>
+		<p>}</p>
+	</div>
+
+		<ul>
+			<h3>document.getElementsByTagName</a>(name)</h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Elements = element.getElementsByTagName(tagName)</p>
+	</div>
+
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>// check the alignment on a number of cells in a table.</p>
+	<p>var table = document.getElementById("table1");</p> 
+	<p>var cells = table.getElementsByTagName("td"); </p>
+	<p>for (var i = 0; i &lt; cells.length; i++) { </p>
+	<p>&nbsp;var status = cells[i].getAttribute("stat);</p>
+	<p>&nbsp;&nbsp;if ( status == "open" ) { </p>
+	<p>// get data </p>
+	<p>&nbsp;&nbsp;}</p>
+	<p>}</p>
+	</div>
+
+		<ul>
+			<h3>&nbsp;document.createElement</a>(name)</h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Var element = document.createElement(tagName, [options]);</p>
+	</div>
+	<p>Tagname-specifies the type of element that will be created.</p>
+	<p>Options - optional ElementCreationOptions object that contains a single property called is, where the value of is is the tage name for a particular element previously defined.</p>
+	
+	<div class="example">
+	<p>document.body.onload = addElement;
+	<p>function addElement () {</p>
+	<p>// create a new p element</p>
+	<p>// and give it some content</p>
+	<p>var newParagraph = document.createElement("p");</p>
+	<p>var newContent = document.createTextNode("Hi there and greetings!");</p>
+	<p>newParagraph.appendChild(newContent); //add the text to paragraph.</p>
+	<p>// add the newly created element and its content into the DOM </p>
+	<p>var currentParagraph = document.getElementById("paragraph1");</p>
+	<p>document.body.insert(newParagraph, currentParagraph);</p>
+	<p>}</p>
+	</div>
+	
+		<ul>
+			<h3>parentNode.appendChild</a>(node)</h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Var aChild = element.appendChild(aChild);</p>
+	</div>
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>Var par = document.createElement(&ldquo;p&rdquo;);</p>
+	<p>document.body.appendChild(par);</p>
+	</div>
+		<ul>
+			<h3>element.innerHTML</a></h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Const content = element.innerHTML;</p>
+	<p>element.innerHTML = content;</p>
+	</div>
+	
+	<p>HTML: </p>
+	<div class="example">
+	<p>&lt;body&gt;</p>
+	<p>&lt;p id=&rdquo;text1&rdquo;&gt;The quick brown fox jumps over the lazy dog. &lt;/p&gt;</p>
+	<p>&lt;/body&gt;</p>
+	</div>
+	
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>Var p = document.getElementById(&ldquo;text1&rdquo;);</p>
+	<p>console.log(p.innerText);</p>
+	</div>
+	
+		<ul>
+			<h3>Element.style</a>.left</h3>
+		<ul>
+			<li>HTMLElement.style property is used to get, also, the inline style of an element</li>
+		</ul>
+			<h3> element.setAttribute</a></h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Element.setAttribute(name, value)</p>
+	<p>//Name - name of attribute to be set</p>
+	<p>//Value - value to assign to the attribute</p>
+	</div>
+
+	<p>HTML:</p>
+	<div class="example">
+	<p>&lt;button&gt;Click here&lt;/button&gt;</p>
+	</div>
+	
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>Var b = document.querySelector(&ldquo;button&rdquo;)</p>
+	<p>b.setAttribute(&ldquo;name&rdquo;, &ldquo;clickButton&rdquo;);</p>
+	<p>b.setAttribute(&ldquo;disabled&rdquo;, &ldquo;&rdquo;);</p>
+	</div>
+	
+		<ul>
+			<h3>element.getAttribute</a></h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Var attribute = element.getAttribute(attributename);</p>
+	</div>
+	
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>Var div1 = document.getElementById(&ldquo;div1&rdquo;);</p>
+	<p>Var style=div1.getAttribute(&ldquo;style&rdquo;);</p>
+	</div>
+	
+		<ul>
+			<h3>element.addEventListener</a></h3>
+		<ul>
+			<li>A method that adds the specified EventListener-compatible object to the event listeners of the event type on the even target on which it&rsquo;s called.</li>
+		</ul>
+		</ul>
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>window.addEventListner(&ldquo;test&rdquo;, null, options);</p>
+	</div>
+		<ul>
+			<h3>Window.content</a></h3>
+		<ul>
+			<li>A window=object is returned for the primary content window.</li>
+		</ul>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Var windowObject = window.content;</p>
+	</div>
+	
+		<ul>
+			<h3>Window.onload</a></h3>
+		</ul>
+	<p>SYNTAX:</p>
+	<div class="example">
+	<p>Window.onload = funcRef;</p>
+	</div>
+	
+	<p>JAVASCRIPT:</p>
+	<div class="example">
+	<p>Window.onload = function() {</p>
+	<p>init();</p>
+	<p>doSomethingElse();</p>
+	<p>}</p>
+	</div>
+
+</details>
+
+
+
+</div>
+</body>
+
+</html>
