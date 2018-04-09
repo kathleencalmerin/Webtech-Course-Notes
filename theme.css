@@ -1,0 +1,327 @@
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat : no-repeat;
+        }
+
+
+        .banner {
+            color:black;
+            width: 100%;
+            min-height: 100%;
+            background-size:cover;
+            height:100vh;
+            background-attachment: fixed;
+            background-repeat : no-repeat;
+        }
+
+        #html-banner {
+            background-image: url("img/html5.jpg");
+        }
+        #www-banner{
+            background-image: url("img/www..jpg");
+        }
+        #internet-banner{
+            background-image: url("img/internet.jpg");
+        }
+        #http-banner{
+            background-image: url("img/http.jpg");
+        }
+        #xhtml-banner{
+            background-image: url("img/xhtml.jpg");
+        }
+        #javas-banner{
+            background-image: url("img/javas.jpg");
+        }
+        #ajax-banner{
+            background-image: url("img/ajax.jpg");
+        }
+        #css-banner{
+            background-image: url("img/css.jpg");
+        }
+
+        /* Font of lessons */
+
+        .lesson {
+            margin : 0% 10%;
+        }
+
+        .lesson summary {
+            background-color: black;
+            font-family: Courier New;
+            font-size: 28px;
+            opacity: .7;
+            color: white;
+            padding: 10px 0 10px 10px;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .lesson summary:hover{
+            background-color:rgb(63, 191, 191) ;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        summary.sub {
+            background-color: lightblue;
+            font-family: Courier New;
+            font-size: 28px;
+            opacity: .9;
+            color: black;
+            padding: 10px 0 10px 10px;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .lesson h2{
+            font-family:Courier New;
+            font-size: 25px;
+            padding: 30px 0 10px 0;
+            text-align: center;
+        }
+
+        .lesson h3{
+            font-family: Courier New;
+            font-size: 20px;
+            color: black;
+            padding: 15px 0;
+            text-align: center;
+
+        }
+
+        .lesson a {
+            color: black;
+        }
+
+        .lesson p, .lesson ul, .lesson dl, .lesson pre{
+            font-family: "Julius Sans One";
+            color: black;
+            background-color: transparent;
+            padding: 10px 30px;
+            opacity: .9;
+        }
+        .lesson dl{
+            opacity: .9;
+        }
+
+        .lesson li{
+            list-style: square outside;
+        }
+
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+
+
+
+
+* {
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(Images/Graphic-Designer.jpg);
+    background-size: auto;
+    background-position: center;
+    background-color: white;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#pic{
+    background-color: #fd8468;
+    text-align: center;
+    height: 200px;
+    width: auto;
+    margin-top: 90px;
+    word-spacing: 100px;
+}
+
+#pic img{
+    background-color: aliceblue;
+    border-radius: 60%;
+    height: 100px;
+    width: 100px;
+    margin-top: 4%;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+}
+
+#pic img:hover{
+    -webkit-transition: all .50s ease;
+    -moz-transition: all .50s ease;
+    -ms-transition: all .50s ease;
+    -o-transition: all .50s ease;
+    transition: all 0.5s .50ease;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+#nav ul {
+    -webkit-font-smoothing: antialiased;
+    background-color:#c5c5c5;
+    opacity: 0.9;
+    list-style: none;
+    width: 100%;
+    position: fixed;
+}
+
+#nav li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+nav a {
+    color: black;
+    display: block;
+    font: normal 13px/50px Arial, Helvetica, sans-serif;
+    padding: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .50s ease;
+    -moz-transition: all .50s ease;
+    -ms-transition: all .50s ease;
+    -o-transition: all .50s ease;
+    transition: all 1s .50ease;
+    
+
+}
+
+
+.navArea {
+    float:center;
+}
+.navwrapper .container {
+    padding:0;
+    width:auto;
+}
+.navbar-header {
+    display:none;
+}
+.nav>li>a {
+    display:inline-block;
+}
+.navbar-nav>li {
+    float:none;
+    display:inline-block;
+}
+.navbar-nav {
+    margin:0 auto;
+    text-align:center;
+    float:none;
+}
+.navbar-toggle {
+    margin-top: 14px;
+}
+/* Special class on .container surrounding .navbar,used for positioning it into place. */
+.navbar-wrapper {
+    margin-top:0px;
+    height:80px;
+    position:relative;
+    z-index:15;
+}
+.navbar-wrapper .container {
+    padding:0px;
+}
+.navbar-collapse {
+    padding:0;
+}
+.navbar-collapse.in {
+    max-height:100%;
+}
+.navbar.navbar-inverse.navbar-static-top {
+    margin:0px auto;
+    background:none;
+    color:#c3c8d6;
+    border:none;
+    font-family:'Open Sans',sans-serif;
+    font-size:14px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+.navbar.navbar-inverse.navbar-static-top a {
+    color:#fff;
+    padding:31px 16px;
+    line-height:18px;
+    text-align:center;
+}
+.navbar.navbar-inverse.navbar-static-top a:hover {
+    background:none;
+    color:#fff;
+}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus {
+    background:none;
+    color:#fff !important;
+}
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color:#fff;
+}
+.hideClass {
+    display:none;
+}
+.isFixed .navbar-inverse .navbar-nav>.active>a,.isFixed .navbar-inverse .navbar-nav>.active>a:focus {
+    background:#c5c5c5;
+    color:#fff;
+}
+.isFixed .navbar.navbar-inverse.navbar-static-top a:hover {
+    background:#c5c5c5;
+    color:#fff;
+}
+.isFixed .navbar.navbar-inverse.navbar-static-top a {
+    color:#fff;
+}
+.stuckMenu {
+    -o-transition:all .5s;
+    -ms-transition:all .5s;
+    -moz-transition:all .5s;
+    -webkit-transition:all .5s;
+    transition:all .5s;
+        background:#111;
+}
+.isFixed {
+    background:#333;
+        -o-transition:all .5s;
+    -ms-transition:all .5s;
+    -moz-transition:all .5s;
+    -webkit-transition:all .5s;
+    transition: all .5s;
+}
+.collapse {
+    display: block !important;
+}
+@media (max-width: 655px) {
+    .collapse {background: #333;}
+    .navbar.navbar-inverse.navbar-static-top a {padding: 15px 16px;line-height: 15px;font-size: 13px;}
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
